@@ -77,7 +77,11 @@ else:
   arr = []
   for i in range(len(list)):
     if (list[i] != ''):
-      t = int(list[i])
+      try:
+        t = int(list[i])
+      except:
+        t = list[i]
+
       arr.append(t)
 
   #print(arr)
